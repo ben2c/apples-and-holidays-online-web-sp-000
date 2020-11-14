@@ -82,7 +82,7 @@ title = x.to_s.tr("_", " ").split #.tr("_", " ") is new and looks like it replac
  {title.collect {|x| x.capitalize}.join(" ")}: #{y.join(", ")}" #$$$$$$$
  end        #The one line interpolation is really nifty awesome to see what Ruby can do.
  end
-end
+
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
