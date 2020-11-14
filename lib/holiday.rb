@@ -78,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
 puts "#{k.capitalize}:"
 v.each do |x,y|
 title = x.to_s.tr("_", " ").split #.tr("_", " ") is new and looks like it replaces characters
- puts "  #{title.collect {|x| x.capitalize}.join(" ")}: {y.join(", ")}" #$$$$$$$
+ puts "  #{title.collect {|x| x.capitalize}.join(" ")}: #{}{y.join(", ")}" #$$$$$$$
  end        #The one line interpolation is really nifty awesome to see what Ruby can do.
  end
 end
