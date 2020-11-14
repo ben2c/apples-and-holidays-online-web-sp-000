@@ -82,8 +82,19 @@ title = x.to_s.tr("_", " ").split #.tr("_", " ") is new and looks like it replac
  end        #The one line interpolation is really nifty awesome to see what Ruby can do.
  end
 end
+
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
+  hello = []
+  holiday_hash.each do |z,w|
+  
+      w.each do |x,y| 
+   if y.include?("BBQ")
+          hello << x
+  
+        end
+      end
+    end # Here it doesn't show up. The holiday_hash.each do |z,w| is still going on
+  hello
 end
