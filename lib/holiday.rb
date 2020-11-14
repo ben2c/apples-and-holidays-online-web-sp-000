@@ -88,11 +88,11 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   hello = []
   holiday_hash.each do |z,w|
-  
-      w.each do |x,y| 
+
+      w.each do |x,y|
    if y.include?("BBQ")
           hello << x
-  
+
         end
       end
     end # Here it doesn't show up. The holiday_hash.each do |z,w| is still going on
