@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
      New Years: Party Hats	      title = x.to_s.tr("_", " ").split #.tr("_", " ") is new and looks like it replaces characters
    Summer:	      puts "  #{title.collect {|x| x.capitalize}.join(" ")}: #{y.join(", ")}" #$$$$$$$
      Fourth Of July: Fireworks, BBQ	    end        #The one line interpolation is really nifty awesome to see what Ruby can do.
-   etc.	  end
+   	  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
